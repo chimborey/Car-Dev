@@ -20,7 +20,7 @@ const FeatureUs = () => {
     autoplaySpeed:0,
     cssEase: "linear",
     arrows: false,
-    pauseOnHover: false,
+    pauseOnHover:true,
     pauseOnFocus: false,
     responsive: [
       {
