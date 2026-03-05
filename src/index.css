@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+}
+
+/* font-group */
+.font-group {
+      font-size: 1.3rem;
+      text-transform: capitalize;
+      color: #000;
+}
+
+/* span-group */
+.span-group {
+      font-size: 1rem;
+      text-transform: capitalize;
+      color: oklch(82.8% 0.189 84.429);
+}
+
+/* span-group */
+.price-group {
+      font-size: 1rem;
+      text-transform: capitalize;
+      color: #b70909;
+}
+
+/* font-title */
+.font-title {
+      font-size: 1.3rem;
+      text-transform: capitalize;
+      color: oklch(98.7% 0.022 95.277);
+}
+
+/* font-text */
+.font-text {
+      font-size: 1rem;
+      text-transform: capitalize;
+      transition: all .5s linear;
+      position: relative;
+      color: oklch(98.7% 0.022 95.277);
+}
+
+.font-text:hover {
+      transition-duration: .5s;
+      opacity: 0.7;
+      color: oklch(82.8% 0.189 84.429);
+      transform: translateY(-35%);
+}
+
+hr {
+      position: absolute;
+      bottom: -3px;
+      height: 2px;
+      left: 0;
+      width: 100%;
+      border: none;
+      outline: none;
+      background-color: blue;
+}
+
+/* font-desc */
+.font-desc {
+      color: #454242;
+      font-size: 0.9rem;
+}
+
+/* btn */
+.btn {
+      width: 130px;
+      display: block;
+      padding: 3px 0px;
+      border: 1px solid oklch(82.8% 0.189 84.429);
+      transition: all 0.5s linear;
+      position: relative;
+      text-align: center;
+      text-transform: capitalize;
+      border-radius: 7px;
+      color: rgb(13, 51, 186);
+}
+
+.btn:hover {
+      background-color: oklch(82.8% 0.189 84.429);
+      transition-duration: 0.5s;
+      color: rgb(161, 11, 11);
+}
+
+.btns {
+      width: 140px;
+      display: block;
+      padding: 3px 0px;
+      border: 1px solid oklch(82.8% 0.189 84.429);
+      transition: all 0.5s linear;
+      position: relative;
+      text-align: center;
+      text-transform: capitalize;
+      border-radius: 7px;
+      color: rgb(255, 255, 255);
+      background-color: oklch(82.8% 0.189 84.429);
+}
+
+.btns:hover {
+      background-color: black;
+      transition-duration: 0.5s;
+      color: rgb(161, 11, 11);
+}
+
+
+/* shadow */
+.shadow:hover {
+      box-shadow: 10px 10px 10px gray;
+}
+
+.slick-slide>div {
+      margin: 0px 10px;
+}
+
+.slick-track {
+      display: flex;
+}
+
+/* hero */
+.hero {
+      animation: hero .9s linear infinite;
+}
+
+@keyframes hero {
+      0% {
+            transform: translateY(0px);
+      }
+
+      50% {
+            transform: translateY(15px);
+      }
+
+      100% {
+            transform: translateY(0px);
+      }
+}
+
+.hero-group {
+      font-size: 2.9rem;
+      text-transform: capitalize;
+      color: #f8f5f5;
+}
+input::placeholder{
+      color: white;
+      text-transform: capitalize;
+      letter-spacing: 3px;
+}
