@@ -46,7 +46,7 @@ const Navbar = () => {
           {/* shopping */}
           <Link to={'/cart'} className='relative'>
             <FaShoppingBag className='text-2xl px-2 py-2 text-white w-9 h-9 rounded-full hover:bg-red-500 duration-300 transition-all' />
-            <span className='text-xl text-yellow-500 absolute -top-2 -right-0'>{cart.length}</span>
+            <span className='text-xl text-yellow-500 absolute -top-2 -right-0'>{cart.reduce((total, item) => total + item.amount, 0)}</span>
           </Link>
           {/* btn */}
           <button className='btn'>sign in</button>
