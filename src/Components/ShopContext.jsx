@@ -23,7 +23,7 @@ export const ShopContextProvider = ({children}) => {
                         return prev.map((item) => item.id === products.id ? {...item, amount: item.amount +1 } : item)
                   }
                   toast.success('Add to Products')
-                  return [...prev, {...products, amount: + 1}]
+                  return [...prev, {...products, amount:  1}]
             })
       }
       // increase quantity
